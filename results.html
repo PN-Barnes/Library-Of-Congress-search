@@ -13,24 +13,29 @@
       href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
     />
     <link rel="stylesheet" href="/assets/styles/style.css" />
-
-<head>
-    Library of Congress Search Engine
-</head>
 <body>
-    <div class="mb-3">
-        <label for="Textarea1" class="form-label">Search</label>
-        <textarea class="form-control" id="searchBar" rows="3"></textarea>
-      </div>
-    <select class="form-select" aria-label="Default select example" class = "selectOptions">
-        <option selected>Open this select menu</option>
+<div class="container">
+    <div class="row align-items-start">
+      <div class="col col-3">
+        <h2>Library of Congress Search Engine</h2>
+        <div class="mb-3">
+            <label for="Textarea1" class="form-label">Search</label>
+            <textarea class="form-control" id="searchBar" rows="3"></textarea>
+          </div>
+        <select class="form-select" aria-label="Default select example" class = "selectOptions">
+            <option selected>Open this select menu</option>
             <option id  = "mapOption" value="1">Maps</option>
             <option id  = "audioOption" value="2">Audio</option>
             <option id  = "photosOption" value="3">Photos</option>
-      </select>
-      <button type="submit" class="btn btn-primary">Submit</button>
-</body>
-
+          </select>
+          <button id = "submitBtn"type="submit" class="btn btn-primary">Submit</button>
+          <button id = "goBackBtn"type="submit" class="btn btn-primary">Go Back</button>
+      </div>
+      <div class="col col-9">
+        Search Results
+      </div>
+      </div>
+    </body>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <!-- jQuery UI <script> tag -->
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
